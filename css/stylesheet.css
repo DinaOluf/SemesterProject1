@@ -447,6 +447,10 @@ main {
   margin-top: 3rem;
 }
 
+.link-cta:hover {
+  text-shadow: #fac87c 0.1em 0.1em 0.2em;
+}
+
 /* FOOTER */
 
 footer {
