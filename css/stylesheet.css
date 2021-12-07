@@ -174,6 +174,7 @@ main {
 .explore-front h2 {
   margin-left: 1rem;
   color: #000;
+  font-size: 1.7em;
 }
 
 .exhibition-spaces {
@@ -185,15 +186,16 @@ main {
 .label {
   background: transparent linear-gradient(240deg, #9afaa7 0%, #9afaa7b4 100%);
   width: 20rem;
-  height: 2.5rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: end;
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
+  font-size: 1.2em;
 }
 
 .label h2 {
-  margin: 1rem;
+  margin-right: 0.5rem;
 }
 
 .exhibition-examples {
@@ -207,11 +209,25 @@ main {
   width: 16rem;
   height: 20rem;
   overflow: hidden;
+  position: relative;
 }
 
 .exhibition-img-wrapper img {
   height: 20rem;
   object-fit: cover;
+}
+
+.img-label {
+  position: absolute;
+  bottom: 0;
+  background-color: #ffffffc9;
+  height: 3rem;
+  width: 16rem;
+  color: #000;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vr-front {
@@ -230,36 +246,198 @@ main {
   padding: 0.7rem 1.5rem;
   text-align: center;
   background-color: #000;
-  margin-top: 0.7rem;
-}
-
-.exhibition-spaces .button-cta {
+  margin-top: 0.5rem;
   float: right;
   margin-right: 1rem;
+  box-shadow: #00000069 0.3rem 0.3rem;
+  color: #9afaa7;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.button-cta:hover {
+  background-color: #9afaa7;
+  color: #000;
 }
 
 .visit {
   height: 31rem;
   width: 25rem;
   background-color: #fac87c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-spacing: 0.25em;
+}
+
+.visit h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: 1rem;
+}
+
+.visit p {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.visit-hours {
+  display: flex;
+  justify-content: center;
+}
+
+.visit-hours ul {
+  padding: 0;
+  margin: 1rem 1rem;
+}
+
+.visit-hours ul li {
+  list-style: none;
+  font-size: 1.2em;
+  margin: 0.4rem 0;
+}
+
+.visit-button {
+  margin: 0;
+}
+
+.visit a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
 }
 
 .special-events {
   width: 100%;
-  height: 40rem;
+  height: 36rem;
   background-color: #9afaa7b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-wrapper {
+  width: 78rem;
+  height: 31rem;
+  background-color: #fac87c;
+}
+
+.events-examples {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+.front-p {
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  line-height: 2em;
+}
+
+.events-col-wrapper {
+  width: 17rem;
+  height: 21rem;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.events-col-wrapper img {
+  height: 21rem;
+  object-fit: cover;
+}
+
+.events-img-label {
+  width: 17rem;
+  font-size: 1.2em;
+}
+
+.plane-front {
+  transform: translate(-30%);
+}
+
+.skull-front {
+  transform: translate(-18%);
+}
+
+.events {
+  transform: translate(-20%);
+}
+
+.events-cta {
+  margin-right: 2.6rem;
 }
 
 .about-us {
-  width: 37rem;
+  width: 38rem;
   height: 28rem;
   background-color: #fac87c;
+  position: relative;
+}
+
+.shorter-label {
+  z-index: 2;
+  position: relative;
+  width: 16rem;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-us img {
+  object-fit: cover;
+  height: 100%;
+  transform: translate(-10%);
+}
+
+.card-right {
+  width: 40%;
+  height: 90%;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-right p {
+  width: 80%;
+  margin: auto 0;
+}
+
+.about-cta {
+  margin: 1.2rem 0 0 0;
 }
 
 .get-involved {
-  width: 37rem;
+  width: 38rem;
   height: 28rem;
   background-color: #fac87c;
+  position: relative;
+}
+
+.get-involved img {
+  object-fit: cover;
+  height: 100%;
+  transform: translate(-20%);
+}
+
+.get-involved .card-right p {
+  width: 90%;
+}
+
+.involved-cta {
+  margin: 0;
 }
 
 .link-cta {
