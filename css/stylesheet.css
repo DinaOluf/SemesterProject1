@@ -97,7 +97,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 6rem;
   padding-right: 1rem;
 }
 
@@ -222,7 +221,7 @@ main {
   bottom: 0;
   background-color: #ffffffc9;
   height: 3rem;
-  width: 16rem;
+  width: 100%;
   color: #000;
   font-size: 1.1em;
   display: flex;
@@ -235,11 +234,11 @@ main {
 }
 
 .mammoth-front {
-  transform: translateX(-10%);
+  transform: translate(-10%);
 }
 
 .astronaut-front {
-  transform: translateX(-18%);
+  transform: translate(-18%);
 }
 
 .button-cta {
@@ -313,7 +312,7 @@ main {
 .special-events {
   width: 100%;
   height: 36rem;
-  background-color: #9afaa7b4;
+  background-color: #9afaa76b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,7 +351,7 @@ main {
 }
 
 .events-img-label {
-  width: 17rem;
+  width: 100%;
   font-size: 1.2em;
 }
 
@@ -364,7 +363,7 @@ main {
   transform: translate(-18%);
 }
 
-.events {
+.energetica-front {
   transform: translate(-20%);
 }
 
@@ -372,7 +371,8 @@ main {
   margin-right: 2.6rem;
 }
 
-.about-us {
+.about-us,
+.get-involved {
   width: 38rem;
   height: 28rem;
   background-color: #fac87c;
@@ -419,20 +419,13 @@ main {
   margin: 1.2rem 0 0 0;
 }
 
-.get-involved {
-  width: 38rem;
-  height: 28rem;
-  background-color: #fac87c;
-  position: relative;
-}
-
 .get-involved img {
   object-fit: cover;
   height: 100%;
   transform: translate(-20%);
 }
 
-.get-involved .card-right p {
+.card-right p {
   width: 85%;
 }
 
@@ -492,4 +485,118 @@ footer ul a:hover {
 
 .right-footer {
   text-align: right;
+}
+
+@media (max-width: 1250px) {
+  main {
+    gap: 1rem;
+  }
+  .explore-front img {
+    transform: translateY(-30%);
+  }
+
+  .exhibition-spaces {
+    width: 60%;
+  }
+  .exhibition-img-wrapper {
+    width: 30%;
+  }
+
+  .vr-front {
+    transform: translate(-10%);
+  }
+
+  .mammoth-front {
+    transform: translate(-25%);
+  }
+
+  .visit {
+    width: 35%;
+  }
+
+  .events-wrapper {
+    width: 90%;
+  }
+
+  .events-col-wrapper {
+    width: 30%;
+  }
+
+  .events-examples p {
+    display: none;
+  }
+
+  .about-us,
+  .get-involved {
+    width: 47%;
+  }
+
+  .shorter-label {
+    width: 50%;
+    font-size: 1em;
+  }
+
+  .card-right p {
+    font-size: 1.1em;
+    width: 95%;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    height: 7.6rem;
+  }
+
+  .top-header {
+    height: 4rem;
+  }
+
+  .logo img {
+    height: 3rem;
+  }
+
+  .logo-heading {
+    font-size: 1em;
+  }
+
+  .logo-slogan {
+    font-size: 0.8em;
+    height: auto;
+  }
+
+  .header-background {
+    height: 4rem;
+    width: 17rem;
+  }
+
+  .visit-icon img {
+    height: 2.5rem;
+  }
+
+  .visit-icon {
+    font-size: 0.9em;
+    padding-right: 0.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul a {
+    width: 30%;
+    font-size: 0.8em;
+    padding: 0.4rem 0.3rem;
+  }
+
+  .nav-row2 {
+    width: 40%;
+  }
+
+  footer ul {
+    width: 8rem;
+  }
+
+  footer ul a {
+    font-size: 0.8em;
+  }
 }
