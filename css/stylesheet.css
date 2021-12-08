@@ -180,6 +180,8 @@ main {
   width: 51rem;
   height: 31rem;
   background-color: #fac87c;
+  display: flex;
+  flex-direction: column;
 }
 
 .label {
@@ -543,6 +545,10 @@ footer ul a:hover {
 }
 
 @media (max-width: 850px) {
+  main {
+    margin-bottom: 4rem;
+  }
+
   header {
     height: 7.6rem;
   }
@@ -576,6 +582,131 @@ footer ul a:hover {
   .visit-icon {
     font-size: 0.9em;
     padding-right: 0.5rem;
+  }
+
+  .explore-front {
+    height: 10rem;
+  }
+
+  .explore-front div {
+    width: 13rem;
+    height: 2rem;
+    font-size: 0.8em;
+  }
+
+  .label {
+    width: 13rem;
+    height: 2rem;
+    font-size: 0.8em;
+    margin: 1rem 0;
+  }
+
+  .button-cta {
+    font-size: 0.8em;
+    padding: 0.5rem 1rem;
+  }
+
+  .exhibition-spaces {
+    width: 95%;
+    height: 20rem;
+  }
+
+  .special-events {
+    height: 23rem;
+  }
+
+  .events-wrapper {
+    height: 20rem;
+  }
+
+  .exhibition-examples,
+  .events-examples {
+    margin: 0.2rem 0;
+  }
+
+  .exhibition-img-wrapper,
+  .events-col-wrapper {
+    height: 12rem;
+  }
+
+  .exhibition-examples img {
+    height: 12rem;
+  }
+
+  .vr-front {
+    transform: translate(-20%);
+    width: 130%;
+  }
+
+  .mammoth-front {
+    transform: translate(-5%);
+  }
+
+  .energetica-front {
+    transform: translate(-12%);
+  }
+
+  .events-examples img {
+    height: 100%;
+  }
+
+  .events-cta {
+    margin-right: 3%;
+  }
+
+  .img-label {
+    font-size: 0.8em;
+    height: 2rem;
+    text-align: center;
+  }
+
+  .visit {
+    width: 60%;
+    min-width: 18rem;
+    height: 25rem;
+  }
+
+  .visit p,
+  .visit ul {
+    font-size: smaller;
+  }
+
+  .visit h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-us,
+  .get-involved {
+    width: 95%;
+    height: 20rem;
+  }
+
+  .card-img {
+    width: 45%;
+  }
+
+  .about-us img {
+    transform: translate(-17%);
+  }
+
+  .get-involved img {
+    transform: translate(-30%);
+  }
+
+  .card-right {
+    width: 50%;
+  }
+
+  .card-right p {
+    font-size: 1em;
+  }
+
+  .shorter-label {
+    width: 11rem;
+  }
+
+  .link-cta {
+    font-size: smaller;
   }
 
   nav ul {

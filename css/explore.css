@@ -126,6 +126,15 @@ nav ul a:hover {
   background-color: #9afaa7;
 }
 
+.active {
+  background-color: #000;
+  color: #fac87c;
+}
+
+.active:hover {
+  background-color: #000;
+}
+
 /* MAIN */
 
 main {
@@ -134,6 +143,96 @@ main {
   align-items: center;
   gap: 2rem;
   padding-bottom: 5rem;
+  position: relative;
+}
+
+.page-background-left,
+.page-background-right {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background-color: #9afaa76b;
+}
+
+.page-background-left {
+  left: 0;
+}
+
+.page-background-right {
+  right: 0;
+}
+
+.headline {
+  background: #fac87c;
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: end;
+  margin: 3rem 0 1.2rem 15%;
+}
+
+.headline h1 {
+  margin-right: 1rem;
+}
+
+section {
+  width: 62%;
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  word-spacing: 0.1em;
+  line-height: 2em;
+  margin: 2rem 0;
+}
+
+.bold-text {
+  font-weight: bolder;
+}
+
+.text-side {
+  width: 60%;
+}
+
+.image-container {
+  width: 20rem;
+  overflow: hidden;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 150%;
+}
+
+.littleastronauts-container {
+  height: 37rem;
+}
+
+.littleastronauts-container img {
+  transform: translate(-17%, -12%);
+}
+
+.middle-section {
+  background: #fac87c;
+  width: 70%;
+  height: 30rem;
+}
+
+.schoolvisit-container {
+  height: 85%;
+}
+
+.schoolvisit-container img {
+  transform: translate(-15%, -17%);
+}
+
+.library-container img {
+  transform: translate(-20%);
 }
 
 .link-cta {
@@ -190,14 +289,28 @@ footer ul a:hover {
   text-align: right;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+  section {
+    gap: 1%;
+    justify-content: space-evenly;
+  }
+
+  .middle-section .text-side {
+    width: 80%;
+  }
+
+  .schoolvisit-container {
+    width: 10%;
+    height: 90%;
+  }
+
+  .schoolvisit-container img {
+    height: 130%;
+    transform: translate(-10%, -15%);
+  }
 }
 
 @media (max-width: 850px) {
-  main {
-    margin-bottom: 4rem;
-  }
-
   header {
     height: 7.6rem;
   }
@@ -251,11 +364,74 @@ footer ul a:hover {
     width: 40%;
   }
 
+  .headline {
+    width: 14rem;
+  }
+
+  .headline h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .first-section,
+  .last-section {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .littleastronauts-container {
+    height: 15rem;
+    width: 70%;
+  }
+
+  .littleastronauts-container img {
+    transform: translate(-17%, -20%);
+  }
+
+  .middle-section div {
+    margin: 0 0.5rem;
+  }
+
+  .schoolvisit-container {
+    min-width: 5rem;
+  }
+
+  .library-container {
+    width: 70%;
+    height: 8rem;
+  }
+
+  .library-container img {
+    transform: translate(-20%, -27%);
+  }
+
   footer ul {
     width: 8rem;
   }
 
   footer ul a {
     font-size: 0.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 0.65em;
+  }
+
+  .headline {
+    height: 2rem;
+    width: 9rem;
+  }
+
+  .headline h1 {
+    font-size: 1.2em;
   }
 }

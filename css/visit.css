@@ -126,14 +126,136 @@ nav ul a:hover {
   background-color: #9afaa7;
 }
 
+.active {
+  background-color: #000;
+  color: #fac87c;
+}
+
+.active:hover {
+  background-color: #000;
+}
+
 /* MAIN */
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem 2rem;
   padding-bottom: 5rem;
+  position: relative;
+}
+
+.page-background-left,
+.page-background-right {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background-color: #9afaa76b;
+}
+
+.page-background-left {
+  left: 0;
+}
+
+.page-background-right {
+  right: 0;
+}
+
+.headline {
+  background: #fac87c;
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: end;
+  margin: 3rem 0 0 15%;
+}
+
+.headline h1 {
+  margin-right: 1rem;
+}
+
+section {
+  width: 70%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  word-spacing: 0.1em;
+  line-height: 2em;
+  margin: 2rem 0;
+}
+
+.bold-text {
+  font-weight: bolder;
+}
+
+.text-side {
+  width: 60%;
+}
+
+.image-container img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.museum-container,
+.cafewoman-container {
+  width: 25rem;
+  overflow: hidden;
+}
+
+.museum-container {
+  height: 30rem;
+}
+
+.museum-container img {
+  height: 100%;
+  transform: translate(-6%);
+}
+
+.middle-section {
+  background: #fac87c;
+  width: 70%;
+  height: 30rem;
+}
+
+.cafewoman-container {
+  height: 35rem;
+}
+
+.cafewoman-container img {
+  height: 100%;
+  transform: translate(-20%);
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+}
+
+.middle-section h2 {
+  font-size: 1.8rem;
+}
+
+.visit-hours {
+  display: flex;
+}
+
+.visit-hours ul {
+  padding: 0;
+}
+
+.visit-hours ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin: 0.5rem;
 }
 
 .link-cta {
@@ -190,14 +312,14 @@ footer ul a:hover {
   text-align: right;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+  section {
+    gap: 1%;
+    justify-content: space-evenly;
+  }
 }
 
 @media (max-width: 850px) {
-  main {
-    margin-bottom: 4rem;
-  }
-
   header {
     height: 7.6rem;
   }
@@ -251,11 +373,102 @@ footer ul a:hover {
     width: 40%;
   }
 
+  .headline {
+    width: 14rem;
+  }
+
+  .headline h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .first-section,
+  .last-section {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .museum-container {
+    width: 70%;
+    height: 14rem;
+  }
+
+  .museum-container img {
+    width: 100%;
+    transform: translate(0, -25%);
+    height: auto;
+  }
+
+  .middle-section {
+    height: 19rem;
+  }
+
+  .middle-section div {
+    margin: 0 0.5rem;
+  }
+
+  .middle-section h2 {
+    font-size: 1.5em;
+  }
+
+  .middle-section div ul li {
+    font-size: 1em;
+  }
+
+  .cafewoman-container {
+    width: 70%;
+    height: 20rem;
+  }
+
+  .cafewoman-container img {
+    transform: translate(0, -9%);
+    width: 100%;
+    height: auto;
+  }
+
   footer ul {
     width: 8rem;
   }
 
   footer ul a {
     font-size: 0.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 0.65em;
+  }
+
+  main {
+    gap: 3rem 2rem;
+  }
+
+  .headline {
+    height: 2rem;
+    width: 8rem;
+  }
+
+  .headline h1 {
+    font-size: 1.2em;
+  }
+
+  .middle-section {
+    font-size: smaller;
+  }
+
+  .museum-container {
+    height: 9rem;
+  }
+
+  .cafewoman-container {
+    height: 9rem;
   }
 }
