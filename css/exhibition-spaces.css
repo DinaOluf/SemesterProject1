@@ -1,0 +1,449 @@
+@font-face {
+  font-family: "P22 Underground";
+  src: url("/fonts/P22underground.ttf") format("truetype");
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+h2 {
+  font-family: "P22 Underground", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 8.8rem;
+  position: relative;
+}
+
+.top-header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6.5rem;
+}
+
+.top-header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.logo img {
+  height: 5.5rem;
+}
+
+.logo-heading {
+  font-family: "P22 Underground", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.logo-slogan {
+  font-size: 1.1rem;
+  margin-left: 0.3rem;
+  height: 2rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 0.3rem;
+}
+
+.header-background {
+  background-image: url(/images/littlechemists.jpg);
+  background-size: cover;
+  height: 6.5rem;
+  width: 27rem;
+  position: absolute;
+  transform: translate(50%);
+  right: 50%;
+  z-index: -1;
+}
+
+.visit-icon img {
+  height: 4rem;
+}
+
+.visit-icon {
+  font-family: "P22 Underground", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+}
+
+nav ul {
+  width: 100%;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  list-style: none;
+  border: solid #000 1px;
+  padding: 0.4rem;
+  flex-grow: 1;
+  text-align: center;
+  font-family: "P22 Underground", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  background-color: #fac87c;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul a:hover {
+  background-color: #9afaa7;
+}
+
+.active {
+  background-color: #000;
+  color: #fac87c;
+}
+
+.active:hover {
+  background-color: #000;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem 2rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.page-background-left,
+.page-background-right {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background-color: #9afaa76b;
+}
+
+.page-background-left {
+  left: 0;
+}
+
+.page-background-right {
+  right: 0;
+}
+
+.headline {
+  background: #fac87c;
+  width: 25rem;
+  height: 3rem;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: end;
+  margin: 3rem 0 0 15%;
+}
+
+.headline h1 {
+  margin-right: 1rem;
+}
+
+section {
+  width: 70%;
+  display: flex;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fac87c;
+}
+
+.first-section {
+  height: 25rem;
+}
+
+.second-section {
+  height: 28rem;
+}
+
+.third-section {
+  height: 34rem;
+}
+
+.fourth-section {
+  height: 18rem;
+}
+
+.fifth-section {
+  height: 24rem;
+}
+
+p {
+  word-spacing: 0.1em;
+  line-height: 2em;
+}
+
+.text-side {
+  margin: 0 1.3rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.image-container {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.astronaut-img {
+  transform: translate(-19%);
+}
+
+.mammoth-img {
+  transform: translate(-22%);
+}
+
+.biology-img {
+  transform: translate(-60%);
+}
+
+.vr-img {
+  height: auto;
+  width: 100%;
+}
+
+.ecology-img {
+  transform: translate(-10%);
+}
+
+.link-cta {
+  width: 100%;
+  text-align: center;
+  color: #233537;
+  margin-top: 3rem;
+}
+
+.link-cta:hover {
+  text-shadow: #fac87c 0.1em 0.1em 0.2em;
+}
+
+/* FOOTER */
+
+footer {
+  height: 8rem;
+  width: 100%;
+  background-color: #233537;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: auto;
+}
+
+footer img {
+  height: 4rem;
+  width: auto;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 10rem;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+.right-footer {
+  text-align: right;
+}
+
+@media (max-width: 1300px) {
+  p {
+    font-size: 0.85em;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    height: 7.6rem;
+  }
+
+  .top-header {
+    height: 4rem;
+  }
+
+  .logo img {
+    height: 3rem;
+  }
+
+  .logo-heading {
+    font-size: 1em;
+  }
+
+  .logo-slogan {
+    font-size: 0.8em;
+    height: auto;
+  }
+
+  .header-background {
+    height: 4rem;
+    width: 17rem;
+  }
+
+  .visit-icon img {
+    height: 2.5rem;
+  }
+
+  .visit-icon {
+    font-size: 0.9em;
+    padding-right: 0.5rem;
+  }
+
+  .link-cta {
+    font-size: smaller;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul a {
+    width: 30%;
+    font-size: 0.8em;
+    padding: 0.4rem 0.3rem;
+  }
+
+  .nav-row2 {
+    width: 40%;
+  }
+
+  .headline {
+    width: 19rem;
+  }
+
+  .headline h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .media-gone {
+    display: none;
+  }
+
+  .second-section {
+    height: 21rem;
+  }
+
+  .third-section {
+    height: 27rem;
+  }
+
+  .fourth-section {
+    height: 20rem;
+  }
+
+  .fifth-section {
+    height: 19rem;
+  }
+
+  footer ul {
+    width: 8rem;
+  }
+
+  footer ul a {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 0.65em;
+  }
+
+  main {
+    gap: 3rem 2rem;
+  }
+
+  .page-background-left,
+  .page-background-right {
+    width: 10%;
+  }
+
+  section {
+    width: 80%;
+  }
+
+  .headline {
+    height: 2rem;
+    width: 13.5rem;
+  }
+
+  .headline h1 {
+    font-size: 1.2em;
+    margin-right: 0.5rem;
+  }
+
+  .fourth-section {
+    height: 23rem;
+  }
+}

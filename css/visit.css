@@ -126,15 +126,6 @@ nav ul a:hover {
   background-color: #9afaa7;
 }
 
-.active {
-  background-color: #000;
-  color: #fac87c;
-}
-
-.active:hover {
-  background-color: #000;
-}
-
 /* MAIN */
 
 main {
