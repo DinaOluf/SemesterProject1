@@ -176,6 +176,20 @@ main {
   font-size: 1.7em;
 }
 
+.explore-front img:hover {
+  animation: 8s ease-in-out 1 showimage;
+}
+
+@keyframes showimage {
+  0% {
+    transform: translateY(-56%);
+  }
+
+  100% {
+    transform: translateY(-22%);
+  }
+}
+
 .exhibition-spaces {
   width: 51rem;
   height: 31rem;
@@ -439,7 +453,7 @@ main {
   width: 100%;
   text-align: center;
   color: #233537;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .link-cta:hover {

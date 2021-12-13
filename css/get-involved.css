@@ -164,7 +164,7 @@ main {
 
 .headline {
   background: #fac87c;
-  width: 25rem;
+  width: 22rem;
   height: 3rem;
   display: flex;
   align-self: flex-start;
@@ -177,6 +177,12 @@ main {
   margin-right: 1rem;
 }
 
+section {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 p {
   word-spacing: 0.1em;
   line-height: 2em;
@@ -187,11 +193,35 @@ p {
   width: 60%;
 }
 
+.images-side {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.image-container {
+  overflow: hidden;
+  height: 30rem;
+}
+
+.vrpaint-img,
+.science-img {
+  height: 100%;
+}
+
+.vrpaint-img {
+  transform: translate(-40%);
+}
+
+.science-img {
+  transform: translate(-20%);
+}
+
 .link-cta {
   width: 100%;
   text-align: center;
   color: #233537;
-  margin-top: 3rem;
 }
 
 .link-cta:hover {
@@ -239,6 +269,26 @@ footer ul a:hover {
 
 .right-footer {
   text-align: right;
+}
+
+@media (max-width: 1300px) {
+  section {
+    flex-direction: column;
+  }
+
+  .text-side {
+    width: 95%;
+    align-self: center;
+  }
+
+  .images-side {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 45%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -311,6 +361,14 @@ footer ul a:hover {
     font-size: 0.8em;
   }
 
+  .images-side {
+    gap: 1rem;
+  }
+
+  .image-container {
+    height: 20rem;
+  }
+
   footer ul {
     width: 8rem;
   }
@@ -322,7 +380,7 @@ footer ul a:hover {
 
 @media (max-width: 500px) {
   p {
-    font-size: 0.65em;
+    font-size: 0.7em;
   }
 
   main {
@@ -331,10 +389,39 @@ footer ul a:hover {
 
   .headline {
     height: 2rem;
-    width: 8rem;
+    width: 12rem;
+    margin-left: 10%;
   }
 
   .headline h1 {
     font-size: 1.2em;
+  }
+
+  .images-side {
+    gap: 0.5rem;
+  }
+
+  .image-container {
+    height: 12rem;
+  }
+
+  .page-background-left,
+  .page-background-right {
+    width: 10%;
+  }
+
+  section {
+    width: 80%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .image-container img {
+    transform: translate(0);
+    float: right;
+  }
+
+  .image-container .science-img {
+    transform: translate(20%);
   }
 }

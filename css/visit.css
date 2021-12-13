@@ -197,7 +197,7 @@ p {
 
 .museum-container,
 .cafewoman-container {
-  width: 25rem;
+  width: 30%;
   overflow: hidden;
 }
 
@@ -253,7 +253,6 @@ p {
   width: 100%;
   text-align: center;
   color: #233537;
-  margin-top: 3rem;
 }
 
 .link-cta:hover {
@@ -307,6 +306,14 @@ footer ul a:hover {
   section {
     gap: 1%;
     justify-content: space-evenly;
+  }
+
+  .museum-container img {
+    transform: translate(-40%);
+  }
+
+  .cafewoman-container img {
+    transform: translate(-30%);
   }
 }
 
@@ -373,7 +380,7 @@ footer ul a:hover {
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   p {
@@ -435,7 +442,7 @@ footer ul a:hover {
 
 @media (max-width: 500px) {
   p {
-    font-size: 0.65em;
+    font-size: 0.7em;
   }
 
   main {
@@ -445,10 +452,11 @@ footer ul a:hover {
   .headline {
     height: 2rem;
     width: 8rem;
+    margin-left: 10%;
   }
 
   .headline h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .middle-section {
@@ -461,5 +469,14 @@ footer ul a:hover {
 
   .cafewoman-container {
     height: 9rem;
+  }
+
+  .page-background-left,
+  .page-background-right {
+    width: 10%;
+  }
+
+  section {
+    width: 80%;
   }
 }

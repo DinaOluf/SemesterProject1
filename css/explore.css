@@ -239,7 +239,6 @@ p {
   width: 100%;
   text-align: center;
   color: #233537;
-  margin-top: 3rem;
 }
 
 .link-cta:hover {
@@ -373,7 +372,7 @@ footer ul a:hover {
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   p {
@@ -423,15 +422,38 @@ footer ul a:hover {
 
 @media (max-width: 500px) {
   p {
-    font-size: 0.65em;
+    font-size: 0.7em;
   }
 
   .headline {
     height: 2rem;
     width: 9rem;
+    margin-left: 10%;
   }
 
   .headline h1 {
     font-size: 1.2em;
+  }
+
+  .page-background-left,
+  .page-background-right {
+    width: 10%;
+  }
+
+  section {
+    width: 80%;
+  }
+
+  .middle-section {
+    width: 80%;
+  }
+
+  .text-side {
+    width: 75%;
+  }
+
+  .littleastronauts-container,
+  .library-container {
+    width: 80%;
   }
 }

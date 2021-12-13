@@ -228,7 +228,6 @@ p {
   width: 100%;
   text-align: center;
   color: #233537;
-  margin-top: 3rem;
 }
 
 .link-cta:hover {
@@ -286,9 +285,19 @@ footer ul a:hover {
   h2 {
     font-size: 1.3rem;
   }
+
+  .third-section {
+    height: 22rem;
+  }
 }
 
 @media (max-width: 900px) {
+  .third-section {
+    height: 27rem;
+  }
+}
+
+@media (max-width: 850px) {
   header {
     height: 7.6rem;
   }
@@ -363,11 +372,11 @@ footer ul a:hover {
   }
 
   .second-section {
-    height: 21rem;
+    height: 20rem;
   }
 
   .third-section {
-    height: 27rem;
+    height: 29rem;
   }
 
   footer ul {
@@ -390,11 +399,11 @@ footer ul a:hover {
 
   .headline {
     height: 2rem;
-    width: 13.5rem;
+    width: 15rem;
   }
 
   .headline h1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-right: 0.5rem;
   }
 
@@ -402,7 +411,43 @@ footer ul a:hover {
     width: 30%;
   }
 
+  .image-container img {
+    width: auto;
+  }
+
+  .oldplane-img {
+    transform: translate(-47%);
+  }
+
+  .nightatmuseum-img {
+    transform: translate(-30%);
+  }
+
+  .energetica-img {
+    transform: translate(-48%);
+  }
+
   .third-section {
     height: 29rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .headline {
+    width: 13rem;
+    margin-left: 10%;
+  }
+
+  .headline h1 {
+    font-size: 1.2em;
+  }
+
+  .page-background-left,
+  .page-background-right {
+    width: 10%;
+  }
+
+  section {
+    width: 80%;
   }
 }

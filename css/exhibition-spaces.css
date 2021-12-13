@@ -240,7 +240,7 @@ p {
 }
 
 .biology-img {
-  transform: translate(-60%);
+  transform: translate(-40%);
 }
 
 .vr-img {
@@ -256,7 +256,6 @@ p {
   width: 100%;
   text-align: center;
   color: #233537;
-  margin-top: 3rem;
 }
 
 .link-cta:hover {
@@ -313,6 +312,10 @@ footer ul a:hover {
 
   h2 {
     font-size: 1.3rem;
+  }
+
+  .biology-img {
+    transform: translate(-50%);
   }
 }
 
@@ -398,6 +401,10 @@ footer ul a:hover {
     height: 27rem;
   }
 
+  .biology-img {
+    transform: translate(-55%);
+  }
+
   .fourth-section {
     height: 20rem;
   }
@@ -417,7 +424,7 @@ footer ul a:hover {
 
 @media (max-width: 500px) {
   p {
-    font-size: 0.65em;
+    font-size: 0.7em;
   }
 
   main {
@@ -436,6 +443,7 @@ footer ul a:hover {
   .headline {
     height: 2rem;
     width: 13.5rem;
+    margin-left: 10%;
   }
 
   .headline h1 {
@@ -443,7 +451,21 @@ footer ul a:hover {
     margin-right: 0.5rem;
   }
 
+  .biology-img {
+    transform: translate(-60%);
+  }
+
   .fourth-section {
     height: 23rem;
+  }
+}
+
+@media (min-width: 1950px) {
+  .astronaut-img,
+  .mammoth-img,
+  .biology-img,
+  .ecology-img {
+    transform: translate(0);
+    width: 100%;
   }
 }
