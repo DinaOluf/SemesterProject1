@@ -236,7 +236,7 @@ p {
 }
 
 .mammoth-img {
-  transform: translate(-22%);
+  transform: translate(-10%);
 }
 
 .biology-img {
@@ -316,6 +316,10 @@ footer ul a:hover {
 
   .biology-img {
     transform: translate(-50%);
+  }
+
+  .mammoth-img {
+    transform: translate(-22%);
   }
 }
 
