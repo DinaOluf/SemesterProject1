@@ -226,6 +226,7 @@ p {
 
 .image-container {
   width: 40%;
+  max-width: 45rem;
   height: 100%;
   overflow: hidden;
 }
