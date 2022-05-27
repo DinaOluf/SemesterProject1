@@ -9,7 +9,7 @@ A community science museum website.
 
 ## Description
 
-This website is made for a project, and is a community science museum's website. Its core target audience is primary and middle school children (7-15) and families with young children. The website is supposed to be informative and appealing, that will attract both middle school pupils and their parents. 
+This website is made for a project, and is a community science museum's website. Its core target audience is primary and middle school children (7-15) and families with young children. The website is supposed to be informative and appealing, that will attract both middle school pupils and their parents. Made with HTML and CSS only!
 
 Site Architecture:
 
