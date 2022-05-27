@@ -25,7 +25,7 @@ Site Architecture:
     
     - Get involved
     
-    . Visit
+    - Visit
 
 
 ## Built With
